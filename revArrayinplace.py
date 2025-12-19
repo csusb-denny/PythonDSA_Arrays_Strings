@@ -30,4 +30,4 @@ def revArray(nums):
     right -= 1
   return nums
 
-print(revArray(nums)) 
+print(revArray(nums))
