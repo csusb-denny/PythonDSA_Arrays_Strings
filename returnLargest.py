@@ -38,4 +38,14 @@ if index value is > than ans then update ans until end of list,
 return ans
 """
 
-def returnLargest()
+nums = [3, 7, 2, 9, 5]
+
+def returnLargest(nums):
+    ans = nums[0]
+    for num in nums[1:]:
+        if num > ans:
+            ans = num 
+
+    return ans
+
+print(returnLargest(nums))
