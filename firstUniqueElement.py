@@ -23,3 +23,23 @@ Explanation:
 
 2 appears once → first unique
 """
+from collections import defaultdict
+
+nums = [4, 5, 1, 2, 1, 4, 5]
+
+def uniqueElements(nums):
+  if not nums:
+    return None
+
+  map = defaultdict(int) 
+
+  for values in nums:
+    map[values] += 1
+
+  for num in nums:
+    if map[num] == 1:
+      return num
+
+  return -1  
+
+print(uniqueElements(nums))
